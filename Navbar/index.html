@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://www.reveation.com/assets/img/logo.png" alt="Reveation Logo">
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li>
+                <a href="#" class="toggle" data-target="products-menu">Products</a>
+                <ul class="dropdown" id="products-menu">
+                    <li><a href="#">Wellness Center Management Solution</a></li>
+                    <li><a href="#">Rental Property Management Solution</a></li>
+                    <li><a href="#">Market Place Solution</a></li>
+                    <li><a href="#">Sales & Distribution Solution</a></li>
+                    <li><a href="#">HR Management Solution</a></li>
+                    <li><a href="#">Project Management Solution</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="toggle" data-target="developer-menu">Hire a Developer</a>
+                <ul class="dropdown" id="developer-menu">
+                    <li><a href="#">Hire React JS Developer</a></li>
+                    <li><a href="#">Hire React Native Developer</a></li>
+                    <li><a href="#">Hire A Nodejs Developer</a></li>
+                    <li><a href="#">Hire Automation Tester</a></li>
+                    <li><a href="#">Hire Manual Tester</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Our Portfolio</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Case Study</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>
