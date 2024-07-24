@@ -411,39 +411,163 @@
 
 
     <div class="connect">
-      <div class="connect-container">
-        <div class="contact-form">
-          <h2>Let's Connect</h2>
-          <form action="#" method="post">
-            <input type="text" name="name" placeholder="Name*" required />
-            <input type="email" name="email" placeholder="Email*" required />
-            <input type="text" name="phone" placeholder="Phone Number*" required />
-            <textarea
-              name="requirements"
-              placeholder="Describe your requirements in brief*"
-              required
-            ></textarea>
-            <button type="submit">Send Message</button>
-          </form>
+      <div class="container">
+          <div class="contact-form">
+              <h1>Let's Connect</h1>
+              <form>
+                  <div class="input-group">
+                      <i class="fas fa-user"></i>
+                      <input type="text" placeholder="Name" required>
+                  </div>
+                  <div class="input-group">
+                      <i class="fas fa-envelope"></i>
+                      <input type="email" placeholder="Email" required>
+                  </div>
+                  <div class="input-group">
+                      <i class="fas fa-phone"></i>
+                      <input type="tel" placeholder="Phone Number" required>
+                  </div>
+                  <div class="input-group">
+                      <i class="fas fa-pencil-alt"></i>
+                      <textarea placeholder="Describe your requirements in brief" required></textarea>
+                  </div>
+                  <button type="submit">Send Message</button>
+              </form>
+          </div>
+          <div class="contact-info">
+              <h2>Contact Info</h2>
+              <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> A- 516, Ratnaakar 9 Square, Opp ITC Narmada, Keshavbag, Vastrapur, Ahmedabad- 380015.</p>
+              <p><i class="fas fa-envelope"></i> <strong>Email:</strong> info@reveation.com</p>
+              <p><i class="fas fa-phone"></i> <strong>Phone:</strong></p>
+              <ul>
+                  <li><i class="fas fa-phone-alt"></i> India: +91 998 977 3391</li>
+                  <li><i class="fas fa-phone-alt"></i> UK: +44 776 793 5658</li>
+                  <li><i class="fas fa-phone-alt"></i> USA: +1 236 234 3356</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+    
+
+  <!-- REVIEW -->
+
+
+  <div class="review-main-body">
+    <div class="review-section">
+      <h2>Customers Review</h2>
+      <div class="review-container">
+        <div class="review active">
+          <i class="fas fa-quote-left"></i>
+          <p>
+            We have used the HRMS software and have found it fulfilling all the
+            requirements that we were looking for in our work process. Highly
+            recommended for use if you are looking for a custom solution.
+          </p>
+          <h3>JAINIK</h3>
         </div>
-        <div class="contact-info">
-          <h2>Contact Info</h2>
+        <div class="review">
+          <i class="fas fa-quote-left"></i>
           <p>
-            <strong>Address:</strong> A-516, Ratnaakar 9 Square, Opp ITC Narmada,
-            Keshavbag, Vastrapur, Ahmedabad- 380015.
+            The customer service is outstanding! They helped us every step of
+            the way and ensured we were satisfied with the final product.
           </p>
+          <h3>JEET</h3>
+        </div>
+        <div class="review">
+          <i class="fas fa-quote-left"></i>
           <p>
-            <strong>Email:</strong>
-            <a href="mailto:info@reveation.com">info@reveation.com</a>
+            Excellent software with great support. It has significantly improved
+            our efficiency and productivity.
           </p>
-          <p><strong>Phone:</strong></p>
-          <p>India: +91 998 977 3391</p>
-          <p>UK: +44 776 793 5658</p>
-          <p>USA: +1 236 234 3356</p>
+          <h3>JAIMIN</h3>
+        </div>
+        <div class="review">
+          <i class="fas fa-quote-left"></i>
+          <p>
+            Highly reliable and user-friendly. It has made our work process much
+            smoother and more organized.
+          </p>
+          <h3>JAY</h3>
+        </div>
+        <div class="pagination">
+          <span class="dot active" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
         </div>
       </div>
     </div>
-    
+    <script src="script1.js"></script>
+  </div>
+
+
+<!-- FOOTER -->
+
+<div class="footer-main">
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h2 class="logo-text">Reveation.</h2>
+        <p>
+          Provider of marked excellence for different types of industries
+          through custom software development as well as ready to be used
+          software modules as a service. We keep moving forward with you in
+          your journey of attaining excellence.
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-section links">
+        <h2>Products</h2>
+        <ul>
+          <li><a href="#">Wellness Center Management Solution</a></li>
+          <li><a href="#">Rental Property Management Solution</a></li>
+          <li><a href="#">Market Place Solution</a></li>
+          <li><a href="#">Sales & Distribution Solution</a></li>
+          <li><a href="#">HR Management Solution</a></li>
+          <li><a href="#">Project Management Solution</a></li>
+        </ul>
+      </div>
+      <div class="footer-section links">
+        <h2>Hire A Developer</h2>
+        <ul>
+          <li><a href="#">Hire React JS Developer</a></li>
+          <li><a href="#">Hire React Native Developer</a></li>
+          <li><a href="#">Hire a Nodejs Developer</a></li>
+          <li><a href="#">Hire Automation Tester</a></li>
+          <li><a href="#">Hire Manual Tester</a></li>
+          <li><a href="#">Hire A UI/UX Designer</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h2>Contact Info</h2>
+        <ul>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            A- 516, Ratnaakar 9 Square, Opp ITC Narmada, Keshavbag, Vastrapur,
+            Ahmedabad- 380015.
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            info@reveation.com
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            India: +91 998 977 3391 <br />
+            UK: +44 776 793 5658 <br />
+            USA: +1 236 234 3356
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
     <script src="script.js"></script>
   </body>
