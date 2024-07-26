@@ -1,0 +1,164 @@
+<!-- Footer Section -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Footer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f5f5f5;
+      }
+
+      .footer-container {
+        text-align: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 0;
+      }
+
+      .footer-column {
+        flex: 1 1 22%;
+        margin: 10px;
+      }
+
+      .footer-column h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+      }
+
+      .footer-column p,
+      .footer-column ul,
+      .footer-column li,
+      .footer-column a {
+        font-size: 1rem;
+        color: #2c3e50;
+        text-decoration: none;
+        line-height: 1.6;
+      }
+
+      .footer-column ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer-column li {
+        margin-bottom: 10px;
+      }
+
+      .footer-column a:hover {
+        text-decoration: underline;
+      }
+
+      .contact-info .icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #2c3e50;
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+      }
+
+      .social-media {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .social-media a {
+        margin: 0 10px;
+        font-size: 1.5rem;
+        color: #2c3e50;
+        text-decoration: none;
+      }
+
+      .social-media a:hover {
+        color: #3498db;
+      }
+
+      @media (max-width: 768px) {
+        .footer-column {
+          flex: 1 1 100%;
+        }
+
+        .social-media {
+          margin-top: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="footer-container">
+      <div class="footer">
+        <div class="footer-column">
+          <img src="https://via.placeholder.com/100x50" alt="Reveation Logo" />
+          <p>
+            Provider of marked excellence for different types of industries
+            through custom software development as well as ready to be used
+            software modules as a service. We keep moving forward with you in
+            your journey of attaining excellence.
+          </p>
+          <div class="social-media">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#">Wellness Center Management Solution</a></li>
+            <li><a href="#">Rental Property Management Solution</a></li>
+            <li><a href="#">Market Place Solution</a></li>
+            <li><a href="#">Sales & Distribution Solution</a></li>
+            <li><a href="#">HR Management Solution</a></li>
+            <li><a href="#">Project Management Solution</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Hire A Developer</h3>
+          <ul>
+            <li><a href="#">Hire React JS Developer</a></li>
+            <li><a href="#">Hire React Native Developer</a></li>
+            <li><a href="#">Hire a Nodejs Developer</a></li>
+            <li><a href="#">Hire Automation Tester</a></li>
+            <li><a href="#">Hire Manual Tester</a></li>
+            <li><a href="#">Hire A UI/UX Designer</a></li>
+          </ul>
+        </div>
+        <div class="footer-column contact-info">
+          <h3>Contact Info</h3>
+          <p>
+            <i class="fas fa-home icon"></i> A- 516, Ratnaakar 9 Square, Opp ITC
+            Narmada, Keshavbag, Vastrapur, Ahmedabad- 380015.
+          </p>
+          <p><i class="fas fa-envelope icon"></i> info@reveation.com</p>
+          <p><i class="fas fa-phone icon"></i> India : +91 998 977 3391</p>
+          <p><i class="fas fa-phone icon"></i> UK : +44 776 793 5658</p>
+          <p><i class="fas fa-phone icon"></i> USA : +1 236 234 3356</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
