@@ -1,0 +1,221 @@
+<!-- goto team -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Website</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 3840px;
+        margin: auto;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .left-side,
+      .right-side {
+        flex: 1;
+        padding: 10px 10px 10px 10px;
+      }
+
+      .intro {
+        text-align: left;
+        margin-bottom: 40px;
+      }
+
+      .intro h2 {
+        margin-bottom: 20px;
+        color: #25285f;
+        font-weight: 800;
+      }
+      .intro h3 {
+        font-size: 36px;
+        font-weight: 700;
+      }
+
+      .intro p {
+        margin-bottom: 20px;
+      }
+
+      .intro button {
+        background: #25285f;
+        color: #ffffff;
+        border: none;
+        padding: 10px 30px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        font-weight: 700;
+        line-height: 25px;
+        text-transform: capitalize;
+        -webkit-transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        -ms-transition: all 0.35s ease-in-out;
+        -o-transition: all 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+        overflow: hidden;
+        border-radius: 5px;
+        font-size: 17px;
+      }
+      .horizontal-line {
+        border: none;
+        height: 1px;
+        background-color: #ccc;
+        margin: 20px 0;
+      }
+      .item {
+        text-align: left;
+        margin-bottom: 20px;
+      }
+
+      .item h3 {
+        color: black;
+        font-size: 30px;
+        font-weight: 550;
+      }
+      .item p {
+        color: black;
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      .right-side {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .box {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: left;
+      }
+      .box h4 {
+        font-weight: 600;
+        font-size: 24px;
+        text-transform: capitalize;
+      }
+
+      .box img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .left-side,
+        .right-side {
+          flex: 100%;
+          padding: 20px;
+        }
+
+        .item::after {
+          display: none;
+        }
+
+        .right-side {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <div class="intro">
+          <h2>WHY REVEATION IS YOUR GO TO TEAM</h2>
+          <h3>
+            We serve your <br />
+            purpose
+          </h3>
+          <p>
+            We believe in continuous improvement. We cater to the right business
+            strategies and have the ability to automate business processes and
+            solutions that make a difference.
+          </p>
+          <button>Contact Now</button>
+          <div class="horizontal-line"></div>
+        </div>
+        <div class="item">
+          <h3>Why Choose Us</h3>
+          <p>We are preferred software solution provider for the clients.</p>
+        </div>
+        <div class="item">
+          <p>
+            We have rich years of experience to understand any business domain
+          </p>
+        </div>
+        <div class="item">
+          <p>
+            Ability to automate business processes and solutions that make a
+            difference.
+          </p>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="box" style="background-color: #25285f; color: white">
+          <img
+            src="https://www.reveation.com/assets/img/icon/resource.png"
+            width="100px"
+            height="100px"
+            alt="Right Talent"
+          />
+          <h4>Right Talent</h4>
+          <p>Right and skilful resources available for projects</p>
+        </div>
+        <div class="box">
+          <img
+            src="https://www.reveation.com/assets/img/icon/execution.png"
+            width="100px"
+            height="100px"
+            alt="Executions"
+          />
+          <h4>Executions</h4>
+          <p>Successful projects deployment case studies</p>
+        </div>
+        <div class="box">
+          <img
+            src="https://www.reveation.com/assets/img/icon/specialists.png"
+            width="100px"
+            height="100px"
+            alt="Specialists Only"
+          />
+          <h4>Specialists Only</h4>
+          <p>Hire team with right aptitude and Can-Do attitude</p>
+        </div>
+        <div class="box" style="background-color: #25285f; color: white">
+          <img
+            src="https://www.reveation.com/assets/img/icon/tech-brain.png"
+            width="100px"
+            height="100px"
+            alt="Tech Brains"
+          />
+          <h4>Tech Brains</h4>
+          <p>Exposure in various technologies and updates on trends</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- width: 100%; */
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
+    /* margin-right: auto; */
+    /* margin-left: auto; -->

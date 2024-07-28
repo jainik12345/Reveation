@@ -1,0 +1,166 @@
+<!-- NAVBAR -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .navbar .menu-icon {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+            position: relative;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: block;
+        }
+
+        .nav-links li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            padding: 0;
+            list-style: none;
+            width: 200px;
+            z-index: 1000;
+        }
+
+        .nav-links li ul li {
+            width: 100%;
+        }
+
+        .nav-links li ul li a {
+            padding: 10px;
+            color: white;
+        }
+
+        .nav-links li:hover ul {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #333;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                max-height: 80vh;
+                overflow-y: auto;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links li {
+                width: 100%;
+                text-align: left;
+            }
+
+            .nav-links li ul {
+                position: static;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-in-out;
+            }
+
+            .nav-links li.open ul {
+                max-height: 300px;
+            }
+
+            .navbar .menu-icon {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <h1>Logo</h1>
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    <ul class="nav-links">
+        <li>
+            <a href="javascript:void(0)" onclick="toggleSubMenu(event)">Product</a>
+            <ul>
+                <li><a href="#">Wellness Center Management Solution</a></li>
+                <li><a href="#">Rental Property Management Solution</a></li>
+                <li><a href="#">Market Place Solution</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Our Portfolio</a>
+        </li>
+        <li>
+            <a href="#">About Us</a>
+        </li>
+        <li>
+            <a href="#">Blog</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" onclick="toggleSubMenu(event)">Hire a Developer</a>
+            <ul>
+                <li><a href="#">Hire a ReactJS Developer</a></li>
+                <li><a href="#">Hire a React Native Developer</a></li>
+                <li><a href="#">Hire a Nodejs Developer</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('show');
+    }
+
+    function toggleSubMenu(event) {
+        const parentLi = event.target.parentElement;
+        parentLi.classList.toggle('open');
+    }
+</script>
+
+</body>
+</html>
