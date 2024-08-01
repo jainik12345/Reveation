@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Process Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            position: fixed;
+        }
+        .box {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .box .number {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .intro {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="intro">
+            <h1>Our Process</h1>
+            <p>These 5 D helps us to do what is expected from us. Let’s invest some dedicated time on this. It pays for itself in due time.</p>
+        </div>
+        <div class="box">
+            <div class="number">1</div>
+            <h2>Discuss</h2>
+            <p>We acknowledge and understand different business domains and how they function. Discuss the things out.</p>
+        </div>
+        <div class="box">
+            <div class="number">2</div>
+            <h2>Define</h2>
+            <p>Once the team understands, we can identify the core problem and define the solution that fits right for your organization.</p>
+        </div>
+        <div class="box">
+            <div class="number">3</div>
+            <h2>Design</h2>
+            <p>Put the action plan which is being designed by talented team members. They formalize the actual solution and design drafting is initiated.</p>
+        </div>
+        <div class="box">
+            <div class="number">4</div>
+            <h2>Develop</h2>
+            <p>As per the visualized designs, the development of the solution is kick-started.</p>
+        </div>
+        <div class="box">
+            <div class="number">5</div>
+            <h2>Deliver</h2>
+            <p>We are getting into the final leg of deploying the software solution that is passed through quality checks.</p>
+        </div>
+    </div>
+</body>
+</html>

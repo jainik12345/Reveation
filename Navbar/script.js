@@ -1,24 +1,24 @@
-const menuIcon = document.getElementById('menu-icon');
-const navLinks = document.getElementById('nav-links');
-const toggles = document.querySelectorAll('.toggle');
+const menuToggle = document.getElementById("mobile-menu");
+const nav = document.querySelector(".nav");
+const menuItems = document.querySelectorAll(".menu-item");
 
-menuIcon.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
+menuToggle.addEventListener("click", () => {
+  nav.classList.toggle("showing");
 });
 
-toggles.forEach(toggle => {
-    toggle.addEventListener('click', (e) => {
-        e.preventDefault();
-        const target = document.getElementById(toggle.getAttribute('data-target'));
-        
-        // Hide all other dropdowns
-        document.querySelectorAll('.dropdown').forEach(dropdown => {
-            if (dropdown !== target) {
-                dropdown.classList.remove('show');
-            }
-        });
+menuItems.forEach((item) => {
+  item.addEventListener("hover,click", (e) => {
+    const dropdown = item.nextElementSibling;
+    const arrow = item.querySelector(".arrow");
 
-        // Toggle the selected dropdown
-        target.classList.toggle('show');
-    });
+    if (dropdown.style.display === "block") {
+      dropdown.style.display = "none";
+      arrow.classList.remove("rotate");
+    } else {
+      dropdown.style.display = "block";
+      arrow.classList.add("rotate");
+    }
+
+    e.stopPropagation();
+  });
 });
